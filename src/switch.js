@@ -1,10 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   TouchableWithoutFeedback,
   View,
   Animated,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import styles from './styles.js';
 
@@ -32,7 +33,7 @@ export default class Switch extends Component {
     buttonBorderColor: PropTypes.string,
     buttonBorderWidth: PropTypes.number,
     animationTime: PropTypes.number,
-    padding: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.bool]),
+    padding: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   };
 
   static defaultProps = {
